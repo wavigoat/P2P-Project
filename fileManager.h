@@ -20,7 +20,8 @@ public:
 		const CommonConfig& config,
 		const PeerInfo& self,
 		const std::string& workingDirectory = ".");
-
+	
+	std::size_t pieceLength(int index) const;
 	std::vector<std::uint8_t> readPiece(int index);
 	void writePiece(int index, std::vector<std::uint8_t> data);
 };
