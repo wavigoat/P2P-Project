@@ -12,13 +12,7 @@ public:
     void log(const std::string& event);
     void connectedTo(int peerId);
     void connectedFrom(int peerId);
-    void preferredNeighbors(const std::string& peerIds);
-    void optimisticallyUnchoked(int peerId);
-    void unchokedBy(int peerId);
-    void chokedBy(int peerId);
     void receivedHave(int peerId, int pieceIndex);
-    void receivedInterested(int peerId);
-    void receivedNotInterested(int peerId);
     void downloadedPiece(int peerId, int pieceIndex, int pieceCount);
     void completeFile();
 
