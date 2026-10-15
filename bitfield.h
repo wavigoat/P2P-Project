@@ -12,7 +12,7 @@ public:
 	bool hasPiece(int index) const;
 	void addPiece(int index);
 	int pieceCount() const;
-	bool isCopmlete() const;
+	bool isComplete() const;
 };
 
 #endif
